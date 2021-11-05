@@ -165,7 +165,7 @@ NS_ASSUME_NONNULL_BEGIN
   }
   // iOS 8 and earlier, use mobile Safari
   if (!openedUserAgent){
-    openedUserAgent = [[UIApplication sharedApplication] openURL:requestURL];
+    openedUserAgent = NO;
   }
 
   if (!openedUserAgent) {
